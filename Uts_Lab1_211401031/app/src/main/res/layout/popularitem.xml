@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/barbelGirl"
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"
+        android:src="@drawable/barbel_train"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/heartIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/rectangle_like"
+        app:layout_constraintEnd_toEndOf="@+id/barbelGirl"
+        app:layout_constraintTop_toTopOf="@+id/barbelGirl" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/heart_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/heartIcon"
+        app:layout_constraintEnd_toEndOf="@+id/heartIcon"
+        app:layout_constraintStart_toStartOf="@+id/heartIcon"
+        app:layout_constraintTop_toTopOf="@+id/heartIcon" />
+
+    <TextView
+        android:id="@+id/fullShotText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Full Shot Woman Streching Arm"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@id/barbelGirl"
+        app:layout_constraintTop_toBottomOf="@id/barbelGirl" />
+
+    <TextView
+        android:id="@+id/beginnerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Beginner  |"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="@id/barbelGirl"
+        app:layout_constraintTop_toBottomOf="@id/fullShotText" />
+
+    <ImageView
+        android:id="@+id/jam"
+        android:layout_width="11dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/clock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/beginnerText" />
+
+    <TextView
+        android:id="@+id/timesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/montserrat"
+        android:text="30 min"
+        android:textSize="13dp"
+        app:layout_constraintStart_toEndOf="@id/jam"
+        app:layout_constraintTop_toBottomOf="@id/fullShotText" />
+
+    <ImageView
+        android:id="@+id/baris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timesText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

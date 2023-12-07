@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/greekPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"
+        android:src="@drawable/greek_salad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/greekDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Greek salad with lettuce, green onion,"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@id/greekPicture"
+        app:layout_constraintTop_toBottomOf="@id/greekPicture" />
+
+    <TextView
+        android:id="@+id/teksKcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/montserrat"
+        android:text="150 Kcal"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="@id/greekDesc"
+        app:layout_constraintTop_toBottomOf="@id/greekDesc" />
+
+    <ImageView
+        android:id="@+id/baris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teksKcal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="20dp">
+
+
+    <ImageView
+        android:id="@+id/bg_iv"
+        android:layout_width="91dp"
+        android:layout_height="91dp"
+        android:src="@drawable/additional_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/iv_addExercise"
+        android:layout_width="91dp"
+        android:layout_height="91dp"
+        android:layout_gravity="center"
+        android:src="@drawable/additional1"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_iv"
+        app:layout_constraintEnd_toEndOf="@+id/bg_iv"
+        app:layout_constraintStart_toStartOf="@+id/bg_iv"
+        app:layout_constraintTop_toTopOf="@+id/bg_iv" />
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Exercise with Jumping Rope"
+        android:textSize="12sp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@+id/bg_iv"
+        app:layout_constraintTop_toTopOf="@+id/bg_iv" />
+
+    <ImageView
+        android:id="@+id/icon_time_1"
+        android:layout_width="11dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/calories"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_kalori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="110 kcal  I"
+        android:textSize="10sp"
+        android:layout_marginLeft="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/icon_time_1"
+        app:layout_constraintStart_toEndOf="@+id/icon_time_1"
+        app:layout_constraintTop_toTopOf="@+id/icon_time_1" />
+
+    <ImageView
+        android:id="@+id/icon_time_2"
+        android:layout_width="11dp"
+        android:layout_height="16dp"
+        android:src="@drawable/clock"
+        app:layout_constraintStart_toEndOf="@+id/tv_kalori"
+        app:layout_constraintTop_toTopOf="@id/tv_kalori"
+        app:layout_constraintBottom_toBottomOf="@id/tv_kalori"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/time_addExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:fontFamily="@font/montserrat"
+        android:text="10 min"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_kalori"
+        app:layout_constraintStart_toEndOf="@+id/icon_time_2"
+        app:layout_constraintTop_toTopOf="@+id/tv_kalori" />
+
+    <TextView
+        android:id="@+id/level_addExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beginner"
+        android:fontFamily="@font/montserrat"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/icon_time_1"
+        app:layout_constraintStart_toStartOf="@+id/icon_time_1"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#69696926"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_addExercise" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
